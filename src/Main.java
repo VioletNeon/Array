@@ -15,7 +15,6 @@ public class Main {
 
         boolean[] arrayArbitrary = new boolean[3];
         arrayArbitrary[0] = true;
-        arrayArbitrary[2] = true;
         System.out.println(Arrays.toString(arrayArbitrary));
 
         // Task-2
@@ -37,6 +36,31 @@ public class Main {
 
         for (byte i = 0; i < arrayArbitrary.length; i++) {
             if (i == arrayArbitrary.length - 1) {
+                System.out.println(arrayArbitrary[i]);
+                break;
+            }
+            System.out.print(arrayArbitrary[i] + ", ");
+        }
+
+        // Task-3
+        for (byte i = (byte) (arrayInt.length - 1); i >= 0; i--) {
+            if (i == 0) {
+                System.out.println(arrayInt[i]);
+                break;
+            }
+            System.out.print(arrayInt[i] + ", ");
+        }
+
+        for (byte i = (byte) (arrayFloat.length - 1); i >= 0; i--) {
+            if (i == 0) {
+                System.out.println(arrayFloat[i]);
+                break;
+            }
+            System.out.print(arrayFloat[i] + ", ");
+        }
+
+        for (byte i = (byte) (arrayArbitrary.length - 1); i >= 0; i--) {
+            if (i == 0) {
                 System.out.println(arrayArbitrary[i]);
                 break;
             }
