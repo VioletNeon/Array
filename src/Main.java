@@ -66,5 +66,14 @@ public class Main {
             }
             System.out.print(arrayArbitrary[i] + ", ");
         }
+
+        // Task-4
+        for (int i = 0; i < arrayInt.length; i++) {
+            if (arrayInt[i] % 2 != 0) {
+                arrayInt[i]++;
+            }
+        }
+
+        System.out.println(Arrays.toString(arrayInt));
     }
 }
